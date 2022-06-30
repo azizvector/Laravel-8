@@ -1,0 +1,262 @@
+html {
+    font-family: sans-serif;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px !important;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: #113f59;
+    background-color: #EDF0F7;
+}
+
+.wrapper {
+    display: flex;
+    padding-top: 70px;
+    margin-top: 25px;
+    flex: 1 1 auto;
+    min-width: 0;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 87;
+    height: 70px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 40px 0px rgba(82, 63, 105, 0.1);
+    align-items: stretch;
+}
+
+.header-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-logo {
+    color: #113f59;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.header-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.header-menu {
+    display: flex;
+    align-items: stretch;
+}
+
+.header-action {
+    display: flex;
+    align-items: stretch;
+}
+
+.menu-nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    margin-left: 40px;
+}
+
+.menu-nav .menu-item {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    float: none;
+    padding: 0;
+}
+
+.menu-nav .menu-item>.menu-link {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    position: relative;
+    outline: none;
+}
+
+.menu-nav .menu-item>.menu-link:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu-nav .menu-item>.menu-link .menu-text {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0;
+}
+
+.menu-nav>.menu-item {
+    position: relative;
+    margin: 0;
+}
+
+.menu-nav>.menu-item>.menu-link {
+    padding: 18px 15px;
+    cursor: pointer;
+    color: #113f59;
+}
+
+.menu-nav>.menu-item>.menu-link .menu-text {
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: initial;
+    color: #113f59;
+}
+
+.menu-nav>.menu-item .menu-link-active {
+    background-color: #fff;
+}
+
+.menu-nav>.menu-item .menu-link-active .menu-text {
+    color: #05afaa;
+}
+
+.menu-nav>.menu-item:hover {
+    transition: background-color 0.3s;
+    background-color: #fff;
+}
+
+.menu-nav>.menu-item:hover>.menu-link {
+    background-color: #fff;
+}
+
+.menu-nav>.menu-item:hover>.menu-link {
+    color: #05afaa;
+}
+
+.menu-nav>.menu-item:hover>.menu-link .menu-text {
+    color: #05afaa;
+}
+
+.card-custom {
+    box-shadow: 0px 0px 30px 0px rgb(82 63 105 / 5%);
+    border: 0;
+}
+
+.card-total {
+    cursor: pointer;
+    transition: color .15s ease,background-color .15s ease,border-color .15s ease;
+}
+
+.card-total:hover {
+    background-color: #113f592e;
+    transition: color .15s ease,background-color .15s ease,border-color .15s ease;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    min-height: 50px;
+    padding: 0 1.5rem;
+    background-color: transparent;
+}
+
+.card-body {
+    padding: 1rem 1.5rem;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    margin-left: 0;
+}
+
+.card-toolbar {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    flex-wrap: wrap;
+}
+
+.table {
+    color: #113f59;
+}
+
+.table>thead {
+    background: #113f59;
+    color: white;
+}
+
+.alert {
+    padding: 0.5rem 1rem;
+}
+
+.alert-dismissible .btn-close {
+    font-size: .75rem;
+    padding: .90rem 1rem;
+}
+
+.foto {
+    width: 100%;
+    max-width: 40px;
+    height: 40px;
+    border: 1px solid #113f592e;
+    border-radius: .4rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.foto-large{
+    max-width: 150px;
+    height: 150px;
+}
+
+.symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 40px;
+    height: 40px;
+    background-color: #113f592e;
+    color: #113f59;
+    border-radius: .4rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.symbol-large {
+    max-width: 150px;
+    height: 150px;
+    font-size: 4.5rem;
+}
